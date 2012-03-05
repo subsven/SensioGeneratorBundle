@@ -31,6 +31,6 @@ class Generator
             'autoescape'       => false,
         ));
 
-        file_put_contents($target, $twig->render($template, $parameters));
+        file_put_contents($target, $twig->render($template.'.twig', $parameters));
     }
 }
